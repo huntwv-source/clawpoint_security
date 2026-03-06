@@ -39,7 +39,7 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
             {/* Right side - View button */}
             <div>
               <a
-                href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1772473188&Signature=mIoKpzwqfoynVrKTWVnArpRsnWzq79bR5WotZfDbMGlIaKT7bkaK50EHEoxQj0a5gJsKGkKI0zhVNsNL4vIJdVj9nkqpmAQswZGwoaTgxtTzIdxinXyGakPtfFC7ptX7Rb-nPssIDSZuxdDIH0JFvB3~HSLLoupPFSiQ86in1LG6fRdTjevfQ3YrzLHX0~mgTlabQ54g0AbburRVwfs0xBjPCWTvu9uLMymQio7JvXstYAASkCumn3AsA0QvH-wmHvvfnkSndQifaICjRHdr0M6K8ajB1CVWL2fE7ynn0UF0RHTeBVo9nGCiLCbMIS7JJZN-a85fOhGivsbBzFyNsg__&Key-Pair-Id=K1PLRK6QK6OJKS"
+                href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1772912626&Signature=kecbme3WVNhECKK9QviDVRsXouk~XpBhUMQBtJSkRWbxX-mfLJYiguSYKM0-Ayr0HNiaOYQ6Vm297T6uBEdw8K~Kqdj9OhwxXJTNNLQx-UrfRiJpVlpMXkVNXOkW1EUCRwwpxNguqrpIuXw7zW6g2iuvkhKEYTvX2hi8Demeub-7Y4OKqAudhmiKc4HGARgLS7d7yA4UHkrEMCUbA-h6cMHmDU5yxfmkZh~DJuCiCm9rjuB3BunikRNHbdaCVzN8Vffku-4DGv4M~k8uE4zj6n7dc26uJeENaXrTf2CPvcJy950hURl1ud1zYcKzW3b-hY1kABWqFgmEcqLc1wyT3Q__&Key-Pair-Id=K1PLRK6QK6OJKS"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 border-2 border-[var(--tactical-green)] bg-black hover:bg-[var(--tactical-green-dark)] hover:border-[var(--night-vision)] text-white font-mono font-bold text-sm tracking-wider transition-all duration-300 group-hover:scale-105 relative overflow-hidden"
@@ -82,7 +82,7 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
   // Inline variant - compact button
   return (
     <a
-      href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1772473188&Signature=mIoKpzwqfoynVrKTWVnArpRsnWzq79bR5WotZfDbMGlIaKT7bkaK50EHEoxQj0a5gJsKGkKI0zhVNsNL4vIJdVj9nkqpmAQswZGwoaTgxtTzIdxinXyGakPtfFC7ptX7Rb-nPssIDSZuxdDIH0JFvB3~HSLLoupPFSiQ86in1LG6fRdTjevfQ3YrzLHX0~mgTlabQ54g0AbburRVwfs0xBjPCWTvu9uLMymQio7JvXstYAASkCumn3AsA0QvH-wmHvvfnkSndQifaICjRHdr0M6K8ajB1CVWL2fE7ynn0UF0RHTeBVo9nGCiLCbMIS7JJZN-a85fOhGivsbBzFyNsg__&Key-Pair-Id=K1PLRK6QK6OJKS"
+      href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1772912626&Signature=kecbme3WVNhECKK9QviDVRsXouk~XpBhUMQBtJSkRWbxX-mfLJYiguSYKM0-Ayr0HNiaOYQ6Vm297T6uBEdw8K~Kqdj9OhwxXJTNNLQx-UrfRiJpVlpMXkVNXOkW1EUCRwwpxNguqrpIuXw7zW6g2iuvkhKEYTvX2hi8Demeub-7Y4OKqAudhmiKc4HGARgLS7d7yA4UHkrEMCUbA-h6cMHmDU5yxfmkZh~DJuCiCm9rjuB3BunikRNHbdaCVzN8Vffku-4DGv4M~k8uE4zj6n7dc26uJeENaXrTf2CPvcJy950hURl1ud1zYcKzW3b-hY1kABWqFgmEcqLc1wyT3Q__&Key-Pair-Id=K1PLRK6QK6OJKS"
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex items-center gap-2 px-6 py-3 border-2 border-[var(--tactical-green)] bg-black hover:bg-[var(--tactical-green-dark)] hover:border-[var(--night-vision)] text-white font-mono font-bold text-sm tracking-wider transition-all duration-300 relative overflow-hidden group ${className}`}
