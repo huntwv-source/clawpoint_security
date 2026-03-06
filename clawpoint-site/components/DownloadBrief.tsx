@@ -36,7 +36,7 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
               </p>
             </div>
 
-            {/* Right side - Download button */}
+            {/* Right side - View button */}
             <div>
               <a
                 href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1772912626&Signature=kecbme3WVNhECKK9QviDVRsXouk~XpBhUMQBtJSkRWbxX-mfLJYiguSYKM0-Ayr0HNiaOYQ6Vm297T6uBEdw8K~Kqdj9OhwxXJTNNLQx-UrfRiJpVlpMXkVNXOkW1EUCRwwpxNguqrpIuXw7zW6g2iuvkhKEYTvX2hi8Demeub-7Y4OKqAudhmiKc4HGARgLS7d7yA4UHkrEMCUbA-h6cMHmDU5yxfmkZh~DJuCiCm9rjuB3BunikRNHbdaCVzN8Vffku-4DGv4M~k8uE4zj6n7dc26uJeENaXrTf2CPvcJy950hURl1ud1zYcKzW3b-hY1kABWqFgmEcqLc1wyT3Q__&Key-Pair-Id=K1PLRK6QK6OJKS"

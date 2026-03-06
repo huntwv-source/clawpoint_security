@@ -241,7 +241,7 @@ export default function AboutPage() {
               </div>
               <h2 className="heading-h2 text-white mb-8">THE TEAM</h2>
 
-              <div className="space-y-6">
+              <div className="space-y-10">
                 {/* Will Smith */}
                 <article className="relative group stalk-in max-w-[220px] mx-auto" style={{ animationDelay: '0.1s' }}>
                   <div className="credential-shine border-2 border-[var(--tactical-green-dark)] bg-black/80 backdrop-blur-sm relative overflow-hidden hover:border-[var(--night-vision)] transition-all duration-500">
