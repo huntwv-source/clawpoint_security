@@ -9,7 +9,7 @@ const contactInfo = [
 ]
 
 const socialLinks = [
-  { label: 'LinkedIn', href: 'https://linkedin.com/company/clawpoint/', icon: 'LI' }
+  { label: 'LinkedIn', href: 'https://linkedin.com/company/clawpoint/', icon: 'LINKED IN' }
 ]
 
 export default function Footer() {
@@ -91,7 +91,7 @@ export default function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="w-10 h-10 border border-tactical-green bg-black hover:bg-tactical-green-dark hover:border-night-vision transition-all duration-300 flex items-center justify-center text-night-vision font-mono text-xs font-bold group relative"
+                  className="h-10 px-3 border border-tactical-green bg-black hover:bg-tactical-green-dark hover:border-night-vision transition-all duration-300 flex items-center justify-center text-night-vision font-mono text-xs font-bold group relative"
                   aria-label={social.label}
                 >
                   {social.icon}
