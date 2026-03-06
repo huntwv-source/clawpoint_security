@@ -80,7 +80,7 @@ export default function AboutPage() {
         {/* Vignette */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.6)_70%,rgba(0,0,0,0.9)_100%)]" />
 
-        <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center pt-24 pb-20">
+        <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center pt-24 pb-12">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-10 font-mono tracking-wider stalk-in" style={{ animationDelay: '0.2s' }}>
             CLAWPOINT SECURITY
             <span className="block text-[var(--night-vision)] text-glow mt-3">
@@ -97,6 +97,54 @@ export default function AboutPage() {
             <p className="text-base md:text-lg text-gray-300 font-mono leading-relaxed">
               Clawpoint Security Collective (CSC) is a mission-centric cybersecurity company built to deliver precision over panic—turning fragmented telemetry, complex risk, and operational uncertainty into actionable outcomes. CSC operates at the intersection of mission assurance, cyber resilience, and analyst enablement to reduce exposure while strengthening mission continuity.
             </p>
+          </div>
+
+          {/* ACQUISITION PATHWAYS */}
+          <div className="text-left max-w-3xl mx-auto stalk-in mt-6 mb-8" style={{ animationDelay: '0.8s' }}>
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-px bg-[var(--tactical-green)]" />
+              <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">MISSION-02</span>
+            </div>
+            <h2 className="heading-h3 text-white mb-4">ACQUISITION PATHWAYS</h2>
+            <div className="flex items-start gap-4">
+              <div className="flex flex-wrap gap-3 flex-1">
+                {[
+                  { label: 'NAICS', value: '541519', note: 'Primary' },
+                  { label: 'NAICS', value: '541511' },
+                  { label: 'NAICS', value: '541512' },
+                  { label: 'NAICS', value: '541611' },
+                  { label: 'NAICS', value: '561690' },
+                  { label: 'UEI', value: 'QMGUKY66AD53' },
+                  { label: 'CAGE', value: '8P5B8' },
+                  { label: null, value: 'SDVOSB' },
+                ].map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="border border-[var(--night-vision)] bg-black px-4 py-2 hover:bg-[var(--tactical-green-dark)]/20 transition-tactical cursor-pointer whitespace-nowrap"
+                  >
+                    <div className="flex items-baseline gap-2">
+                      {item.label && (
+                        <span className="text-gray-400 font-mono text-xs">{item.label}</span>
+                      )}
+                      <span className="text-white font-mono text-sm font-bold">{item.value}</span>
+                      {item.note && (
+                        <span className="text-[var(--night-vision)] font-mono text-xs">{item.note}</span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="border border-[var(--tactical-green-dark)] bg-black/60 p-2 opacity-80 hover:opacity-100 hover:border-[var(--night-vision)] transition-all duration-300 shrink-0 self-center">
+                <Image
+                  src="/images/Service-Disabled Veteran-Owned-Certified.png"
+                  alt="Service-Disabled Veteran-Owned Small Business Certified"
+                  width={72}
+                  height={72}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -122,7 +170,7 @@ export default function AboutPage() {
             <div className="pt-14 pb-12 emerge-from-forest">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-px bg-[var(--tactical-green)]" />
-                <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">CAPABILITIES-02</span>
+                <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">CAPABILITIES-03</span>
               </div>
               <h2 className="heading-h2 text-white mb-6">WHAT WE DO</h2>
               <p className="text-base md:text-lg text-gray-300 font-mono leading-relaxed mb-6">
@@ -155,7 +203,7 @@ export default function AboutPage() {
             <div className="py-12 emerge-from-forest">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-px bg-[var(--tactical-green)]" />
-                <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">TRACK RECORD</span>
+                <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">PERFORMANCE-04</span>
               </div>
               <h2 className="heading-h2 text-white mb-6">PROVEN PERFORMANCE</h2>
               <p className="text-base md:text-lg text-gray-300 font-mono leading-relaxed mb-8">
@@ -189,7 +237,7 @@ export default function AboutPage() {
             <div className="emerge-from-forest">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-px bg-[var(--tactical-green)]" />
-                <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">LEADERSHIP-02</span>
+                <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">LEADERSHIP-05</span>
               </div>
               <h2 className="heading-h2 text-white mb-8">THE TEAM</h2>
 

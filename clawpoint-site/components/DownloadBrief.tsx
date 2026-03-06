@@ -32,15 +32,16 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
                 {title}
               </h3>
               <p className="text-gray-400 font-mono text-sm">
-                Download our comprehensive security overview and capabilities brief
+                View our comprehensive security overview and capabilities brief
               </p>
             </div>
 
             {/* Right side - Download button */}
             <div>
               <a
-                href="/downloads/clawpoint-brief.pdf"
-                download
+                href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1772912626&Signature=kecbme3WVNhECKK9QviDVRsXouk~XpBhUMQBtJSkRWbxX-mfLJYiguSYKM0-Ayr0HNiaOYQ6Vm297T6uBEdw8K~Kqdj9OhwxXJTNNLQx-UrfRiJpVlpMXkVNXOkW1EUCRwwpxNguqrpIuXw7zW6g2iuvkhKEYTvX2hi8Demeub-7Y4OKqAudhmiKc4HGARgLS7d7yA4UHkrEMCUbA-h6cMHmDU5yxfmkZh~DJuCiCm9rjuB3BunikRNHbdaCVzN8Vffku-4DGv4M~k8uE4zj6n7dc26uJeENaXrTf2CPvcJy950hURl1ud1zYcKzW3b-hY1kABWqFgmEcqLc1wyT3Q__&Key-Pair-Id=K1PLRK6QK6OJKS"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 border-2 border-[var(--tactical-green)] bg-black hover:bg-[var(--tactical-green-dark)] hover:border-[var(--night-vision)] text-white font-mono font-bold text-sm tracking-wider transition-all duration-300 group-hover:scale-105 relative overflow-hidden"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -62,10 +63,10 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                   />
                 </svg>
-                <span className="relative z-10">DOWNLOAD BRIEF</span>
+                <span className="relative z-10">VIEW BRIEF</span>
 
                 {/* Tactical corners */}
                 <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-[var(--night-vision)] opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -81,8 +82,9 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
   // Inline variant - compact button
   return (
     <a
-      href="/downloads/clawpoint-brief.pdf"
-      download
+      href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1772912626&Signature=kecbme3WVNhECKK9QviDVRsXouk~XpBhUMQBtJSkRWbxX-mfLJYiguSYKM0-Ayr0HNiaOYQ6Vm297T6uBEdw8K~Kqdj9OhwxXJTNNLQx-UrfRiJpVlpMXkVNXOkW1EUCRwwpxNguqrpIuXw7zW6g2iuvkhKEYTvX2hi8Demeub-7Y4OKqAudhmiKc4HGARgLS7d7yA4UHkrEMCUbA-h6cMHmDU5yxfmkZh~DJuCiCm9rjuB3BunikRNHbdaCVzN8Vffku-4DGv4M~k8uE4zj6n7dc26uJeENaXrTf2CPvcJy950hURl1ud1zYcKzW3b-hY1kABWqFgmEcqLc1wyT3Q__&Key-Pair-Id=K1PLRK6QK6OJKS"
+      target="_blank"
+      rel="noopener noreferrer"
       className={`inline-flex items-center gap-2 px-6 py-3 border-2 border-[var(--tactical-green)] bg-black hover:bg-[var(--tactical-green-dark)] hover:border-[var(--night-vision)] text-white font-mono font-bold text-sm tracking-wider transition-all duration-300 relative overflow-hidden group ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -104,10 +106,10 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
         />
       </svg>
-      <span className="relative z-10">DOWNLOAD BRIEF</span>
+      <span className="relative z-10">VIEW BRIEF</span>
 
       {/* Tactical corners */}
       <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-[var(--night-vision)] opacity-0 group-hover:opacity-100 transition-opacity" />
