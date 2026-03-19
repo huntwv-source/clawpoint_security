@@ -39,7 +39,7 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
             {/* Right side - View button */}
             <div>
               <a
-                href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1773504789&Signature=c~THxHSOa09ZnArlatiThuEMi2-AuVQbF-kSVAh06J1BbeyrwYP5-ngJsVZfHZepWOk1IXmjUT4lRF7mAw1HRfC3wsKYU2ljdx9s3OsjhhJZw4KVd~iUamCBSHLuxjwHJmkEnpd6Z6gh2ceot0~AWBoiA8i2RHWkGDeRKyoGThK5~uvO8RbqtjgSWbXdKCQoCJweG63dVh-CZl9Bg62NnYxOcyM7bO96BzlSnnwFNOgvKkK4qMCj~UdrXBisfjMhxrgrr0hSTHfYRaLq8GkGERZkE14-KqnyPfCE0py12gEsWNM8Z1Ma~KhSUR5NXjZtzoqvs6JjUWN7Obw~3ltWSw__&Key-Pair-Id=K1PLRK6QK6OJKS"
+                href="https://acrobat.adobe.com/id/urn:aaid:sc:US:0c88d62e-687e-4e0f-89fb-ec14539bb34e"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 border-2 border-[var(--tactical-green)] bg-black hover:bg-[var(--tactical-green-dark)] hover:border-[var(--night-vision)] text-white font-mono font-bold text-sm tracking-wider transition-all duration-300 group-hover:scale-105 relative overflow-hidden"
@@ -82,7 +82,7 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
   // Inline variant - compact button
   return (
     <a
-      href="https://certifications.sba.gov/bucket/documents/100656_entity_id/QMGUKY66AD53_capability_statement_02232026_U9sg.pdf?Expires=1773504789&Signature=c~THxHSOa09ZnArlatiThuEMi2-AuVQbF-kSVAh06J1BbeyrwYP5-ngJsVZfHZepWOk1IXmjUT4lRF7mAw1HRfC3wsKYU2ljdx9s3OsjhhJZw4KVd~iUamCBSHLuxjwHJmkEnpd6Z6gh2ceot0~AWBoiA8i2RHWkGDeRKyoGThK5~uvO8RbqtjgSWbXdKCQoCJweG63dVh-CZl9Bg62NnYxOcyM7bO96BzlSnnwFNOgvKkK4qMCj~UdrXBisfjMhxrgrr0hSTHfYRaLq8GkGERZkE14-KqnyPfCE0py12gEsWNM8Z1Ma~KhSUR5NXjZtzoqvs6JjUWN7Obw~3ltWSw__&Key-Pair-Id=K1PLRK6QK6OJKS"
+      href="https://acrobat.adobe.com/id/urn:aaid:sc:US:0c88d62e-687e-4e0f-89fb-ec14539bb34e"
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex items-center gap-2 px-6 py-3 border-2 border-[var(--tactical-green)] bg-black hover:bg-[var(--tactical-green-dark)] hover:border-[var(--night-vision)] text-white font-mono font-bold text-sm tracking-wider transition-all duration-300 relative overflow-hidden group ${className}`}
