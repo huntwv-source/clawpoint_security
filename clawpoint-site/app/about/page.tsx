@@ -259,25 +259,8 @@ export default function AboutPage() {
                   </div>
                 </article>
 
-                {/* Dr. Edgar Carmenatty */}
-                <article className="relative group stalk-in max-w-[220px] mx-auto" style={{ animationDelay: '0.2s' }}>
-                  <div className="credential-shine border-2 border-[var(--tactical-green-dark)] bg-black/80 backdrop-blur-sm relative overflow-hidden hover:border-[var(--night-vision)] transition-all duration-500">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[var(--night-vision)]/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-                    <div className="relative aspect-square overflow-hidden">
-                      <Image src="/images/headshots/edgar-carmenatty.png" alt="Dr. Edgar Carmenatty" fill className="object-cover object-top transition-all duration-500" unoptimized />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
-                    </div>
-                    <div className="p-4 text-center">
-                      <h3 className="text-lg font-bold text-white font-mono mb-1 tracking-wide">Dr. Edgar Carmenatty</h3>
-                      <p className="text-[var(--night-vision)] font-mono text-xs font-bold">Principal Cyber Security Consultant</p>
-                    </div>
-                    <div className="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-[var(--night-vision)] opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <div className="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-[var(--night-vision)] opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </div>
-                </article>
-
                 {/* Charles Walker */}
-                <article className="relative group stalk-in max-w-[220px] mx-auto" style={{ animationDelay: '0.3s' }}>
+                <article className="relative group stalk-in max-w-[220px] mx-auto" style={{ animationDelay: '0.2s' }}>
                   <div className="credential-shine border-2 border-[var(--tactical-green-dark)] bg-black/80 backdrop-blur-sm relative overflow-hidden hover:border-[var(--night-vision)] transition-all duration-500">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[var(--night-vision)]/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
                     <div className="relative aspect-square overflow-hidden">
