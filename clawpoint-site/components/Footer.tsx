@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const contactInfo = [
   { label: 'Email', value: 'CSC_growth@clawpointsecuritycollective.com', href: 'mailto:CSC_growth@clawpointsecuritycollective.com' },
-  { label: 'Location', value: '9319 Robert D. Snyder Rd, Suite 202, Charlotte, NC 28223', href: null }
+  { label: 'Location', value: '4833 Berewick Town Center Drive, Unit E, #277, Charlotte, NC 28278', href: null }
 ]
 
 const socialLinks = [
