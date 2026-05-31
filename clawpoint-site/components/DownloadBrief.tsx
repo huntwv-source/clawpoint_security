@@ -7,9 +7,10 @@ interface DownloadBriefProps {
   className?: string
   title?: string
   hideLabel?: boolean
+  href?: string
 }
 
-export default function DownloadBrief({ variant = 'inline', className = '', title = 'CLAWPOINT SECURITY BRIEF', hideLabel = false }: DownloadBriefProps) {
+export default function DownloadBrief({ variant = 'inline', className = '', title = 'CLAWPOINT SECURITY BRIEF', hideLabel = false, href = 'https://acrobat.adobe.com/id/urn:aaid:sc:US:0c88d62e-687e-4e0f-89fb-ec14539bb34e' }: DownloadBriefProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   if (variant === 'banner') {
@@ -39,7 +40,7 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
             {/* Right side - View button */}
             <div>
               <a
-                href="https://acrobat.adobe.com/id/urn:aaid:sc:US:0c88d62e-687e-4e0f-89fb-ec14539bb34e"
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 border-2 border-[var(--tactical-green)] bg-black hover:bg-[var(--tactical-green-dark)] hover:border-[var(--night-vision)] text-white font-mono font-bold text-sm tracking-wider transition-all duration-300 group-hover:scale-105 relative overflow-hidden"
@@ -82,7 +83,7 @@ export default function DownloadBrief({ variant = 'inline', className = '', titl
   // Inline variant - compact button
   return (
     <a
-      href="https://acrobat.adobe.com/id/urn:aaid:sc:US:0c88d62e-687e-4e0f-89fb-ec14539bb34e"
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex items-center gap-2 px-6 py-3 border-2 border-[var(--tactical-green)] bg-black hover:bg-[var(--tactical-green-dark)] hover:border-[var(--night-vision)] text-white font-mono font-bold text-sm tracking-wider transition-all duration-300 relative overflow-hidden group ${className}`}
