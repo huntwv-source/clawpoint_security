@@ -114,6 +114,7 @@ export default function AboutPage() {
                   { label: 'NAICS', value: '541512' },
                   { label: 'NAICS', value: '541611' },
                   { label: 'NAICS', value: '561690' },
+                  { label: 'NAICS', value: '541690' },
                   { label: 'UEI', value: 'QMGUKY66AD53' },
                   { label: 'CAGE', value: '8P5B8' },
                   { label: null, value: 'SDVOSB' },
