@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import DownloadBrief from '@/components/DownloadBrief'
 
 export default function InfiniteViewPage() {
   const [scrollProgress, setScrollProgress] = useState(0)
@@ -28,7 +29,7 @@ export default function InfiniteViewPage() {
       </div>
 
       {/* Hero Section — logo + platform overview */}
-      <section className="relative flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: 'linear-gradient(var(--tactical-green) 1px, transparent 1px), linear-gradient(90deg, var(--tactical-green) 1px, transparent 1px)',
@@ -50,7 +51,7 @@ export default function InfiniteViewPage() {
 
         <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full py-20 pt-28">
           {/* Logo — smaller */}
-          <div className="mb-10 iv-emerge flex justify-center">
+          <div className="mb-10 pt-12 pb-4 iv-emerge flex justify-center">
             <Image
               src="/images/New Infinite view.png"
               alt="Infinite View"
@@ -68,7 +69,7 @@ export default function InfiniteViewPage() {
               <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">PLATFORM-01</span>
             </div>
             <h2 className="heading-h3 text-white mb-4">MODULAR ARCHITECTURE FOR MISSION SUCCESS</h2>
-            <p className="text-base md:text-lg text-gray-300 font-mono leading-relaxed">
+            <p className="text-base md:text-lg text-gray-300 font-mono leading-relaxed mb-24">
               Infinite View is Clawpoint&apos;s concept-stage analyst augmentation platform designed to reduce cognitive load and accelerate mission response by translating scattered security telemetry into a coherent operational picture. It is built to strengthen analyst judgment—not replace it.
             </p>
           </div>
@@ -164,6 +165,18 @@ export default function InfiniteViewPage() {
               </div>
             </article>
           </div>
+        </div>
+      </section>
+
+      {/* Clear Signal Purpose Document */}
+      <section className="relative border-t border-[var(--tactical-green-dark)] py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <DownloadBrief
+            variant="banner"
+            title="CLEAR SIGNAL PURPOSE DOCUMENT"
+            hideLabel
+            href="/downloads/ClearSignal_Purpose_Document.html"
+          />
         </div>
       </section>
 
