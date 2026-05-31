@@ -94,7 +94,7 @@ export default function AboutPage() {
               <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">MISSION-01</span>
             </div>
             <h2 className="heading-h3 text-white mb-4">WHO WE ARE</h2>
-            <p className="text-base md:text-lg text-gray-300 font-mono leading-relaxed">
+            <p className="text-sm md:text-base text-gray-300 font-mono leading-relaxed">
               Clawpoint Security Collective (CSC) is a mission-centric cybersecurity company built to deliver precision over panic—turning fragmented telemetry, complex risk, and operational uncertainty into actionable outcomes. CSC operates at the intersection of mission assurance, cyber resilience, and analyst enablement to reduce exposure while strengthening mission continuity.
             </p>
           </div>
@@ -106,44 +106,61 @@ export default function AboutPage() {
               <span className="text-[var(--tactical-green-light)] font-mono text-xs tracking-widest">MISSION-02</span>
             </div>
             <h2 className="heading-h3 text-white mb-4">ACQUISITION PATHWAYS</h2>
-            <div className="flex items-start gap-4">
-              <div className="flex flex-wrap gap-3 flex-1">
+            <div className="flex flex-wrap gap-3 mb-6">
+              {[
+                { label: 'NAICS', value: '541519', note: 'Primary' },
+                { label: 'NAICS', value: '541511' },
+                { label: 'NAICS', value: '541512' },
+                { label: 'NAICS', value: '541611' },
+                { label: 'NAICS', value: '561690' },
+                { label: 'NAICS', value: '541690' },
+                { label: 'UEI', value: 'QMGUKY66AD53' },
+                { label: 'CAGE', value: '8P5B8' },
+                { label: null, value: 'SDVOSB' },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="border border-[var(--night-vision)] bg-black px-4 py-2 hover:bg-[var(--tactical-green-dark)]/20 transition-tactical cursor-pointer whitespace-nowrap"
+                >
+                  <div className="flex items-baseline gap-2">
+                    {item.label && (
+                      <span className="text-gray-400 font-mono text-xs">{item.label}</span>
+                    )}
+                    <span className="text-white font-mono text-sm font-bold">{item.value}</span>
+                    {item.note && (
+                      <span className="text-[var(--night-vision)] font-mono text-xs">{item.note}</span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Government agency logos — row 1: 4, row 2: 5 */}
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-2">
                 {[
-                  { label: 'NAICS', value: '541519', note: 'Primary' },
-                  { label: 'NAICS', value: '541511' },
-                  { label: 'NAICS', value: '541512' },
-                  { label: 'NAICS', value: '541611' },
-                  { label: 'NAICS', value: '561690' },
-                  { label: 'NAICS', value: '541690' },
-                  { label: 'UEI', value: 'QMGUKY66AD53' },
-                  { label: 'CAGE', value: '8P5B8' },
-                  { label: null, value: 'SDVOSB' },
-                ].map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="border border-[var(--night-vision)] bg-black px-4 py-2 hover:bg-[var(--tactical-green-dark)]/20 transition-tactical cursor-pointer whitespace-nowrap"
-                  >
-                    <div className="flex items-baseline gap-2">
-                      {item.label && (
-                        <span className="text-gray-400 font-mono text-xs">{item.label}</span>
-                      )}
-                      <span className="text-white font-mono text-sm font-bold">{item.value}</span>
-                      {item.note && (
-                        <span className="text-[var(--night-vision)] font-mono text-xs">{item.note}</span>
-                      )}
-                    </div>
+                  { src: '/images/Service-Disabled Veteran-Owned-Certified.png', alt: 'Service-Disabled Veteran-Owned Small Business Certified' },
+                  { src: '/images/government%20logos/ANG-large.jpg', alt: 'Air National Guard' },
+                  { src: '/images/government%20logos/census-logo-blue.avif', alt: 'U.S. Census Bureau' },
+                  { src: '/images/government%20logos/dhs-seal-250%20(1).jpg', alt: 'Department of Homeland Security' },
+                ].map((logo, idx) => (
+                  <div key={idx} className="bg-black/60 border border-[var(--tactical-green-dark)] p-2 flex items-center justify-center h-20 flex-1 hover:border-[var(--night-vision)] transition-all duration-300">
+                    <Image src={logo.src} alt={logo.alt} width={64} height={64} className="object-contain max-h-14 w-auto" unoptimized />
                   </div>
                 ))}
               </div>
-              <div className="border border-[var(--tactical-green-dark)] bg-black/60 p-2 opacity-80 hover:opacity-100 hover:border-[var(--night-vision)] transition-all duration-300 shrink-0 self-center">
-                <Image
-                  src="/images/Service-Disabled Veteran-Owned-Certified.png"
-                  alt="Service-Disabled Veteran-Owned Small Business Certified"
-                  width={72}
-                  height={72}
-                  className="object-contain"
-                  unoptimized
-                />
+              <div className="flex gap-2">
+                {[
+                  { src: '/images/government%20logos/DTRA_Seal-PNG.png', alt: 'Defense Threat Reduction Agency' },
+                  { src: '/images/government%20logos/NavyColorJPEG.jpg', alt: 'U.S. Navy' },
+                  { src: '/images/government%20logos/ngen-logo-800-x-250.webp', alt: 'NGEN' },
+                  { src: '/images/government%20logos/NMCI_Square.webp', alt: 'NMCI' },
+                  { src: '/images/government%20logos/USHMM_White.webp', alt: 'U.S. Holocaust Memorial Museum' },
+                ].map((logo, idx) => (
+                  <div key={idx} className="bg-black/60 border border-[var(--tactical-green-dark)] p-2 flex items-center justify-center h-20 flex-1 hover:border-[var(--night-vision)] transition-all duration-300">
+                    <Image src={logo.src} alt={logo.alt} width={64} height={64} className="object-contain max-h-14 w-auto" unoptimized />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
