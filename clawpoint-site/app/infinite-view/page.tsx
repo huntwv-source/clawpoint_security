@@ -169,7 +169,7 @@ export default function InfiniteViewPage() {
       </section>
 
       {/* Clear Signal Purpose Document */}
-      <section className="relative border-t border-[var(--tactical-green-dark)] py-12 px-4 sm:px-6 lg:px-8">
+      {/* <section className="relative border-t border-[var(--tactical-green-dark)] py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <DownloadBrief
             variant="banner"
@@ -178,7 +178,7 @@ export default function InfiniteViewPage() {
             href="/downloads/ClearSignal_Purpose_Document.html"
           />
         </div>
-      </section>
+      </section> */}
 
     </div>
   )
