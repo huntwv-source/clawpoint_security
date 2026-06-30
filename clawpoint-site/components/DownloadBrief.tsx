@@ -10,7 +10,7 @@ interface DownloadBriefProps {
   href?: string
 }
 
-export default function DownloadBrief({ variant = 'inline', className = '', title = 'CLAWPOINT SECURITY BRIEF', hideLabel = false, href = 'https://acrobat.adobe.com/id/urn:aaid:sc:US:0c88d62e-687e-4e0f-89fb-ec14539bb34e' }: DownloadBriefProps) {
+export default function DownloadBrief({ variant = 'inline', className = '', title = 'CLAWPOINT SECURITY BRIEF', hideLabel = false, href = '/downloads/Clawpoint_Security_Collecitve_Capability_ Statement- 2026 Final-2.pdf' }: DownloadBriefProps) {
   const [isHovered, setIsHovered] = useState(false)
 
   if (variant === 'banner') {
