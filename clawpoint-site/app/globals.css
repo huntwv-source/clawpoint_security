@@ -73,6 +73,23 @@
   }
 }
 
+/* Blog post body — styles TipTap HTML rendered on public pages */
+.blog-body h1 { @apply text-3xl font-bold text-white font-mono mt-8 mb-4; }
+.blog-body h2 { @apply text-2xl font-bold text-white font-mono mt-6 mb-3; }
+.blog-body h3 { @apply text-xl font-bold text-white font-mono mt-5 mb-2; }
+.blog-body p  { @apply text-white font-mono text-base leading-relaxed mb-4; }
+.blog-body a  { @apply text-[var(--night-vision)] hover:underline; }
+.blog-body ul { @apply list-disc list-inside text-white font-mono mb-4 space-y-1 pl-4; }
+.blog-body ol { @apply list-decimal list-inside text-white font-mono mb-4 space-y-1 pl-4; }
+.blog-body li { @apply text-white font-mono text-base; }
+.blog-body strong { @apply text-white font-bold; }
+.blog-body em { @apply italic text-white; }
+.blog-body code { @apply text-[var(--night-vision)] bg-black/60 px-1 py-0.5 text-sm font-mono rounded; }
+.blog-body pre  { @apply bg-black/80 border border-[var(--tactical-green-dark)] p-4 overflow-x-auto mb-4 font-mono text-sm text-white; }
+.blog-body blockquote { @apply border-l-4 border-[var(--tactical-green)] pl-4 text-white/80 italic font-mono mb-4; }
+.blog-body hr { @apply border-[var(--tactical-green-dark)] my-6; }
+.blog-body img { @apply max-w-full h-auto my-4; }
+
 html {
   scroll-behavior: smooth;
 }

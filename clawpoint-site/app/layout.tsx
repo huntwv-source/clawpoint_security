@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Orbitron, Special_Elite, Inter, Roboto_Mono } from 'next/font/google'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+import ConditionalLayout from '@/components/ConditionalLayout'
 import './globals.css'
 
 // Sans-serif font (Geist alternative)
@@ -39,6 +38,7 @@ export const viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://clawpoint.security'),
   title: 'Clawpoint Security Collective | Hunting Threats in the Digital Forest',
   description: 'Elite cybersecurity hunters with predatory precision. We are the apex predators that hunt down digital threats in the darkness between compliance and operational reality.',
   keywords: [
@@ -109,13 +109,7 @@ export default function RootLayout({
         <div className="scanline" />
 
         {/* Main structure */}
-        <Navigation />
-
-        <main className="min-h-screen">
-          {children}
-        </main>
-
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   )
