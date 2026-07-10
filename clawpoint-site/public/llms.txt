@@ -1,0 +1,19 @@
+# Clawpoint Security Collective
+
+> Elite cybersecurity company specializing in mission assurance, threat intelligence, and cyber resilience for government and enterprise clients. SDVOSB certified.
+
+## Blog
+
+The /blog path contains published articles on cybersecurity strategy, threat intelligence, Zero Trust, mission-critical security operations, and company news.
+
+## Pages
+
+- /about — Company background, team, acquisition pathways (NAICS, UEI, CAGE, SDVOSB)
+- /solutions — Cybersecurity service offerings
+- /infinite-view — Infinite View threat intelligence product
+- /contact — Contact and consultation scheduling
+
+## Contact
+
+CSC_growth@clawpointsecuritycollective.com
+4833 Berewick Town Center Drive, Unit E, #277, Charlotte, NC 28278
