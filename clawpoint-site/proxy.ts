@@ -29,12 +29,13 @@ export async function proxy(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser()
 
-  const { pathname } = request.nextUrl
+  const { pathname, hash } = request.nextUrl
   const isLoginPage = pathname === '/admin/login'
   const isForgotPage = pathname === '/admin/forgot-password'
   const isSignupPage = pathname === '/admin/signup'
   const isAdminRoute = pathname.startsWith('/admin')
 
+  // Allow unauthenticated access to signup, login, and forgot-password pages
   if (isAdminRoute && !isLoginPage && !isForgotPage && !isSignupPage && !user) {
     return NextResponse.redirect(new URL('/admin/login', request.url))
   }
