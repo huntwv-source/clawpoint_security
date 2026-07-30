@@ -24,15 +24,29 @@ export default function SignupPage() {
       const params = new URLSearchParams(hash)
       const accessToken = params.get('access_token')
       const type = params.get('type')
-      const email = params.get('email')
 
       if (!accessToken || type !== 'invite') {
         setTokenError('No valid invitation found.')
         return
       }
 
+      // Extract email from JWT token payload
+      let email = ''
+      try {
+        const parts = accessToken.split('.')
+        if (parts.length !== 3) {
+          setTokenError('Invalid token format.')
+          return
+        }
+        const payload = JSON.parse(atob(parts[1]))
+        email = payload.email
+      } catch {
+        setTokenError('Failed to parse invitation token.')
+        return
+      }
+
       if (!email) {
-        setTokenError('Invalid invitation: email not found.')
+        setTokenError('Invalid invitation: email not found in token.')
         return
       }
 
