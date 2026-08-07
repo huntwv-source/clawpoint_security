@@ -53,12 +53,12 @@ export default function SignupPage() {
       const supabase = createClient()
 
       try {
-        console.log('Verifying invite token:', accessToken.substring(0, 20) + '...')
-        // For invite tokens, only token and type are needed (email is extracted from JWT)
+        console.log('Verifying invite token with email:', email, 'token:', accessToken.substring(0, 20) + '...')
         const { data, error } = await supabase.auth.verifyOtp({
+          email,
           token: accessToken,
           type: 'invite',
-        } as any)
+        })
 
         if (error) {
           console.error('verifyOtp error:', error)
