@@ -53,22 +53,26 @@ export default function SignupPage() {
       const supabase = createClient()
 
       try {
+        console.log('Verifying invite token:', accessToken.substring(0, 20) + '...')
+        // For invite tokens, only token and type are needed (email is extracted from JWT)
         const { data, error } = await supabase.auth.verifyOtp({
-          email,
           token: accessToken,
           type: 'invite',
-        })
+        } as any)
 
         if (error) {
-          setTokenError('Invalid or expired invitation. Please request a new invite.')
+          console.error('verifyOtp error:', error)
+          setTokenError(`Invalid or expired invitation: ${error.message}`)
           return
         }
 
+        console.log('verifyOtp success, user:', data?.user?.email)
         if (data?.user?.email) {
           setUserEmail(data.user.email)
           setIsValidToken(true)
         }
-      } catch {
+      } catch (err) {
+        console.error('verifyOtp exception:', err)
         setTokenError('Failed to verify invitation. Please try again.')
       }
     }
